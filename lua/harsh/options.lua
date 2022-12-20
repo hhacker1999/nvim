@@ -43,3 +43,7 @@ end
 
 -- So that neovim can find sqlite dynamic library
 vim.g.sqlite_clib_path = "/opt/local/lib/libsqlite3.dylib"
+
+-- disable netrw
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1

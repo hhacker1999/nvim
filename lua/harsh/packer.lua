@@ -35,7 +35,6 @@ return packer.startup(function(use)
       { 'rafamadriz/friendly-snippets' },
     }
   }
-  use { "nvim-telescope/telescope-file-browser.nvim" }
   use {
     'numToStr/Comment.nvim'
   }
@@ -46,4 +45,11 @@ return packer.startup(function(use)
     requires = { 'kyazdani42/nvim-web-devicons', opt = true }
   }
   use { "numToStr/FTerm.nvim" }
+  use {
+    'nvim-tree/nvim-tree.lua',
+    requires = {
+      'nvim-tree/nvim-web-devicons', -- optional, for file icon
+    },
+    tag = 'nightly' -- optional, updated every week. (see issue #1193)
+  }
 end)
